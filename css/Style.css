@@ -23,19 +23,16 @@ body {
     }
 
   .about_background-image{
-    margin: 0;
-    padding: 0px 0px 25px 0px;
+    
+    margin: 0px;
+    padding: 0px;
     background-image: url('https://wallpaperaccess.com/full/4334829.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    background-position: center 56px;
-    -webkit-background-size: cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    max-width: none;
+    background-attachment: scroll;
+    
+    
+    
   }
 
   .God_of_war-background-image{
@@ -86,4 +83,21 @@ body {
     -o-background-size:cover;
     max-width: none;
 
-    }      
+    }  
+    
+    content{
+      display: flex;
+      justify-content: center;
+    }
+    .about{
+      width: 800px;
+      background-color: purple;
+      display: flex;
+      flex-direction: column;
+      padding-left: 90px;
+      
+    }
+    
+ video{
+  width: 550px;
+ }
