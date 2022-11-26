@@ -28,12 +28,12 @@ content{
   
   width: 800px;
   /* هنا تعدل لون الخلفية */
-  background-color: rgba(61, 171, 244, 0.303);;
+  background-color: rgba(46, 156, 229, 0.503);;
   display: flex;
   flex-direction: column;
   padding: 0 90px;
   /* هنا تعدل لون الخط */
-  color: white;
+  color: black;
   
 }
 img{
