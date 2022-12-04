@@ -25,8 +25,8 @@ content{
 }
 
 .about{
-  
-  width: 800px;
+  margin: 30px;
+  width: 700px;
   /* هنا تعدل لون الخلفية */
   background-color: rgba(46, 156, 229, 0.503);;
   display: flex;
@@ -50,4 +50,7 @@ video{
   flex-wrap: wrap;
   padding: 50px;
   gap: 100px;
+}
+.icon{
+  width: 25px;
 }
