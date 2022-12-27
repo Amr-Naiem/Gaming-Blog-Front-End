@@ -2,55 +2,305 @@
 @import "https://fonts.googleapis.com/css?family=Sofia&effect=fire";
 
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0px 0px 25px 0px;
-  background-image: url('../pics/Background_Pic.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  background-position: center 56px;
-  -webkit-background-size: cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  max-width: none;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0px 0px 25px 0px;
+    background-image: url('../assets/pics/Background_Pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-position: center 56px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    max-width: none;
 }
 
-content{
-  display: flex;
-  justify-content: center;
-  min-height: 100%;
+content {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
 }
 
-.about{
-  margin: 30px;
-  width: 700px;
-  /* هنا تعدل لون الخلفية */
-  background-color: rgba(46, 156, 229, 0.503);;
-  display: flex;
-  flex-direction: column;
-  padding: 0 90px;
-  /* هنا تعدل لون الخط */
-  color: black;
-  
+.Brand--title {
+    font-family: "Gilroy";
+    font-size: 1.5em;
+    margin: 0.5em 1em 0.4em 0.4em;
+    color: #fffefe;
+
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
 }
-img{
-  width: 550px;
-  align-self: center;
-}
-    
-video{
-  width: 550px;
+.about {
+    margin: 30px;
+    width: 700px;
+    /* هنا تعدل لون الخلفية */
+    background-color: rgba(46, 156, 229, 0.503);;
+    display: flex;
+    flex-direction: column;
+    padding: 0 90px;
+    /* هنا تعدل لون الخط */
+    color: black;
+
 }
 
-.cardContainer{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-  gap: 100px;
+img {
+    width: 550px;
+    align-self: center;
 }
-.icon{
-  width: 25px;
+
+video {
+    width: 550px;
+}
+
+.icon {
+    width: 25px;
+}
+
+:root {
+    --surface-color: #121212;
+    --curve: 40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #121212;
+}
+.bgBlack{
+    background-color: #121212;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    margin: 4rem 4vw;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.GameCard {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    background-color: var(--surface-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+
+}
+
+.GameCard:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.GameCard:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1.1em;
+    margin: 0 0 0.3em;
+    color: #ffffff;
+    font-family: "Gilroy";
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+.card__status {
+    font-size: 0.8em;
+    color: #cacaca;
+    font-family: "Gilroy";
+
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #dadada;
+    font-family: "Gilroy";
+    font-weight: normal;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Gilroy";
+
+url("assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+
+url("assets/fonts/Gilroy-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: auto;
+}
+
+@font-face {
+    font-family: "Share Tech Mono";
+
+url("assets/fonts/ShareTechMono-Regular.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+.footer-clean {
+    padding:50px 0;
+    background-color: #121212;
+    color: #c0c0c0;
+}
+
+.footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+
+.footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity:1;
+}
+
+.footer-clean .item.social {
+    text-align:right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align:center;
+        padding-bottom:20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align:center;
+    }
+}
+
+.footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+    opacity:0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social > a {
+        margin-top:40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social > a {
+        margin-top:10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
 }
