@@ -1,96 +1,235 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <link rel="stylesheet" href="./css/Style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ravens Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-    
+</head>
+<body class="background-image">
+<nav class="navbar navbar-expand-lg navbar-dark bgBlack sticky-top">
+    <a class="Brand--title" href="#">PLANET.GG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  </head>
-  <body class="background-image">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-
-        <a class="navbar-brand font-effect-fire-animation position-absolute top-1 start-50 translate-middle-x" href="index.html"><span class="mb-0 h2">Ravens Blog</span></a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="./HTML/aboutUs.html">About Us</a>
+                <a class="nav-link " href="./HTML/aboutUs.html">ABOUT US</a>
             </li>
 
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/"><img src="./pics/facebook.png" alt="facebook" style="width: 50px;"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <div class="cardContainer" >
-      <div >
-        <div class="card text-white bg-dark mb-3" style="width: 500px; height: 226px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="width: 160px; height: 223px;">
-              <a href="godOfwar.html"> <img src="./pics/god-of-warCard.jpg" class="img-fluid rounded-start" alt="God of war image" style="width: 179px; height: 223px;"></a>
-            </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><a href="./HTML/godOfWar.html">God of War 2018</a></h5>
-                <br/>
-              <p class="card-text">god of war is a game that tells ....</p>
-            </div>
-          </div>
-         </div>
-       </div>
-      </div>
+        </ul>
 
-      <div >
-        <div class="card text-white bg-dark mb-3" style="width: 500px; height: 226px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="width: 160px; height: 223px;">
-              <a href="Uncharted4.html"> <img src="./pics/unchartedCard.webp" class="img-fluid rounded-start" alt="God of war image" style="width: 179px; height: 223px;"></a>
-            </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><a href="./HTML/Uncharted4.html">Uncharted 4: A theifs end</a></h5>
-                <br/>
-              <p class="card-text">The last game for nethan drake collection </p>
-            </div>
-          </div>
-         </div>
-       </div>
-      </div>
 
-      <div >
-        <div class="card text-white bg-dark mb-3" style="width: 500px; height: 226px;">
-          <div class="row g-0">
-            <div class="col-md-4" style="width: 160px; height: 223px;">
-              <a href="Hellblade.html"> <img src="./pics/hellbladeCard.jpg" class="img-fluid rounded-start" alt="God of war image" style="width: 179px; height: 223px;"></a>
-            </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><a href="./HTML/Hellblade.html">Hellblade senuas sacrifice</a></h5>
-                <br/>
-              <p class="card-text">million voices in your head and lost in a land you ....</p>
-            </div>
-          </div>
-         </div>
-       </div>
-      </div>
-
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-  </body>
+</nav>
+<ul class="cards">
+    <li>
+
+        <a href="./HTML/godOfWar.html" class="GameCard">
+            <img src="assets/pics/god-of-warCard.jpg" class="card__image" alt="God of war image"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path d=""/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/amr.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">God of War 2018</h3>
+                        <span class="card__status">1 hour ago</span>
+                    </div>
+                </div>
+                <p class="card__description">god of war is a game that tells ....</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./HTML/Uncharted4.html" class="GameCard">
+            <img src="assets/pics/unchartedCard.webp" class="card__image" alt="uncharted"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/sorour.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Uncharted 4: A theifs end</h3>
+                        <span class="card__status">2 hours ago</span>
+                    </div>
+                </div>
+                <p class="card__description">The last game for nethan drake collection</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./HTML/Hellblade.html" class="GameCard">
+            <img src="assets/pics/hellbladeCard.jpg" class="card__image" alt="hellblade"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/serag.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Hellblade senuas sacrifice</h3>
+                        <span class="card__status">1 hour ago</span>
+                    </div>
+                </div>
+                <p class="card__description">million voices in your head and lost in a land you ....</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="" class="GameCard">
+            <img src="assets/pics/Horizon.jpg" class="card__image" alt=""/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/nasser.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Horizon Zero Dawn</h3>
+                        <span class="card__status">1 day ago</span>
+                    </div>
+                </div>
+                <p class="card__description">Earth is ours no more.</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./HTML/Hellblade.html" class="GameCard">
+            <img src="assets/pics/FarCry5.png" class="card__image" alt="hellblade"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/nasser.png.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Far Cry® 5</h3>
+                        <span class="card__status">5days ago</span>
+                    </div>
+                </div>
+                <p class="card__description">FIGHT AGAINST A DEADLY CULT ....</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="" class="GameCard">
+            <img src="assets/pics/MortalKombatXL.png" class="card__image" alt="MortalKombatXL"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/nasser.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Mortal Kombat XL</h3>
+                        <span class="card__status">6 day ago</span>
+                    </div>
+                </div>
+                <p class="card__description">One of the best-selling titles of 2015.</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="./HTML/Hellblade.html" class="GameCard">
+            <img src="assets/pics/EldenRing.png" class="card__image" alt="EldenRing"/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/amr.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Elden Ring</h3>
+                        <span class="card__status">1 week ago</span>
+                    </div>
+                </div>
+                <p class="card__description">The Golden Order has been broken.</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="" class="GameCard">
+            <img src="assets/pics/ShadowMordor.png" class="card__image" alt=""/>
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                        <path/>
+                    </svg>
+                    <img class="card__thumb" src="assets/pics/nasser.png" alt=""/>
+                    <div class="card__header-text">
+                        <h3 class="card__title">Middle-earth: Shadow of Mordor</h3>
+                        <span class="card__status">1 day ago</span>
+                    </div>
+                </div>
+                <p class="card__description">Unleash the Power of the Wraith.</p>
+            </div>
+        </a>
+    </li>
+</ul>
+
+
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                        href="#"><i class="icon ion-social-instagram"></i></a>
+                    <p class="copyright">Company Name © 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>
 
 
