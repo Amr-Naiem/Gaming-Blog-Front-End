@@ -56,15 +56,6 @@ section {
 
 }
 
-footer {
-    width: 100%;
-    background-color: #323232;
-    color: #f2f2f2;
-    height: 8vh;
-    text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 1vh;
-}
 
 @media (max-width: 800px) {
     .head {
@@ -274,7 +265,7 @@ body {
 
 .card__arc path {
     fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+    display: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
 .GameCard:hover .card__header {
@@ -330,7 +321,7 @@ body {
 @font-face {
     font-family: "Gilroy";
 
-url("assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    src: url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
@@ -338,15 +329,14 @@ url("assets/fonts/Gilroy-Medium.ttf") format("truetype");
 @font-face {
     font-family: "Gilroy";
 
-url("assets/fonts/Gilroy-Thin.ttf") format("truetype");
+    src: url("../assets/fonts/Gilroy-Thin.ttf") format("truetype");
     font-weight: normal;
-    font-style: auto;
+    font-style: normal;
 }
-
 @font-face {
     font-family: "Share Tech Mono";
 
-url("assets/fonts/ShareTechMono-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/ShareTechMono-Regular.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
