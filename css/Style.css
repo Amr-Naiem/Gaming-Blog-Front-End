@@ -265,7 +265,7 @@ body {
 
 .card__arc path {
     fill: var(--surface-color);
-    display: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
 .GameCard:hover .card__header {
@@ -300,6 +300,7 @@ body {
 
 .card__status {
     font-size: 0.8em;
+    padding: 7px;
     color: #cacaca;
     font-family: "Gilroy";
 
@@ -321,7 +322,7 @@ body {
 @font-face {
     font-family: "Gilroy";
 
-    src: url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    src:  url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
@@ -437,7 +438,7 @@ body {
 .buttonl {
     min-width: 300px;
     min-height: 60px;
-    font-family: 'Gilroy';
+    font-family: 'ShareTechMono-Regular';
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
