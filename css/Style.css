@@ -4,22 +4,18 @@
 
 
 .parallax1 {
-    background-image: url(../assets/pics/716160.jpg);
     min-height: 100%;
 }
 
 .parallax2 {
-    background-image: url(../assets/pics/GodOfWar3.jpg);
     min-height: 100%;
 }
 
 .parallax3 {
-    background-image: url(../assets/pics/GodOfWar4.jpg);
     min-height: 100%;
 }
 
 .parallax4 {
-    background-image: url(../assets/pics/GodOfWar5.jpg);
     min-height: 100%;
 }
 
@@ -322,8 +318,15 @@ body {
 @font-face {
     font-family: "Gilroy";
 
-    src:  url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    src:  url("../assets/fonts/Gilroy-Heavy.ttf") format("truetype");
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+
+    src:  url("../assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: normal;
     font-style: normal;
 }
 
